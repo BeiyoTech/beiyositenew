@@ -9,7 +9,7 @@ const OurHostel = () => {
         <HostelsComponent
         noOfHostels = "2"
         />
-       <div className='explorediv'> <a href="/hostel" className='exploremore' style={{textAlign:'right'}}>Explore more</a></div>
+       <div className='explorediv'> <a href="/hostel" className='exploremore' style={{textAlign:'center'}}>Explore more</a></div>
     </div>
 
   )

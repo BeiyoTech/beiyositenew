@@ -92,8 +92,13 @@
         transform: translateY(-200%); 
         transition: transform 1s ease; 
       } 
-      .pcnavlist{
+      .pclist .pcnavlist {
         display: none;
+      }
+      
+      .mobilenavlist {
+        display: block;
+        width: 100%;
       }
         .menu{
           display: block;  
@@ -109,9 +114,7 @@
           margin-left: 0cqw;
           margin-top: 1rem;
         }
-        .mobilenavlist{
-          display: block;
-        }
+       
      .logo{
       width: 128px;
       height: 40px;
@@ -138,7 +141,9 @@
            /* background: linear-gradient(180deg, #FFFFFF 51.78%, rgba(255, 255, 255, 0.51) 85.71%, rgba(255, 255, 255, 0) 100%);
            border-radius: 0; width: 100%;   padding-left: 1.5rem;   padding-right: 1.5rem; */
 
+
         }
+        
         .navmainhead{
           display: flex;
           justify-content: center;
@@ -168,4 +173,4 @@
           backdrop-filter: blur(0px);
         }
       }
-      
+    
