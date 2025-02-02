@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 import Homepage from './pages/Homepage';
 import About from './pages/About';
+import RegistrationForm from '../src/components/RegistrationForm';
 import Hostel from './pages/Hostel';
 import Navbar from './pages/Home page/Nav';
 
@@ -64,6 +65,7 @@ function App() {
          <Routes>
           <Route path="/" exact element={<Homepage/>}  />
           <Route path="/about" exact element={<About/>} />
+          <Route path="/RegistrationForm" exact element={<RegistrationForm/>} />
           <Route path='/listyourproperty' exact element={<ListYourProperty/>}/>
           <Route path="/hostel" exact element={<Hostel/>} />
           <Route path="/hostel/:id" exact element={<HostelDetail/>} />

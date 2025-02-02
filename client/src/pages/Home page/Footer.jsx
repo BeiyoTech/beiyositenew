@@ -15,6 +15,7 @@ const Footer = () => {
     <ul>
       {/* <li style={{color:'#000',fontWeight:'500',fontSize: '1.3rem'}}>Know Us</li> */}
     <a className='link' href="/about"><li>Our Story</li></a>  
+    <a className='link' href="/RegistrationForm"><li>temporary</li></a>  
       <a href="/achievement" className='link'><li>Our Achievements</li></a>
       <a href="/listyourproperty" className='link'><li>Partner with us</li></a>
 
