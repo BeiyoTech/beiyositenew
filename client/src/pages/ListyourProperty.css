@@ -1,5 +1,5 @@
 .listyourPropertyDiv {
-  height: 180vh;
+  height: 97rem;
   margin-top: 0;
   margin-bottom: 18rem;
   padding: 0 2rem;
@@ -18,65 +18,111 @@
     padding-top: 1rem;
 
     .sublist {
-      padding-left: 4rem;
-      padding-right: 4rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
       padding-top: 2rem;
       flex-wrap: wrap;
       h3 {
         font-size: 2.5rem;
       }
       .leftlist {
+        height: 15rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        /* border: 1px solid black; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
-        gap: 2rem;
         flex-direction: row;
         margin-top: 2rem;
-        margin-bottom: 4rem;
-        gap: 2.5rem;
+        margin-bottom: 2rem;
+        gap: 1.5rem;
         h3 {
           font-size: 2.5rem;
         }
 
         /* .stats-container-div {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            max-width: fit-content;
-            .stats {
-              text-align: center;
-              div {
-                font-size: 16px;
-                font-weight: bold;
-                color: red;
-              }
-              p {
-                font-size: 12px;
-              }
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          max-width: fit-content;
+          .stats {
+            text-align: center;
+            div {
+              font-size: 16px;
+              font-weight: bold;
+              color: red;
             }
-          } */
+            p {
+              font-size: 12px;
+            }
+          }
+        } */
 
         .listFeatureDiv {
           align-items: center;
           display: flex;
-          border: 2px solid rgba(0, 0, 0, 0.2);
+          /* border: 1px solid black; */
           border-radius: 1rem;
-          gap: 0.5rem;
+          padding: 2px;
+          gap: 1rem;
           align-items: center;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          backdrop-filter: blur(5px);
+          /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
           h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+          }
+          .icon {
+            width: 2rem;
+            height: 2rem;
           }
         }
-        .listFeatureDiv :hover {
-          transform: scale(1.03);
-          border-color: rgba(0, 0, 0, 0.4);
+        /* .listFeatureDiv :hover {
+          transition-duration: 400ms;
+          transform: translateY(-5px);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15),
+            0 5px 10px rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(255, 214, 10, 0.7);
+          background: linear-gradient(135deg, #ffffff, #fef3c7);
+        } */
+      }
+      .stats-outer-div {
+        height: 20rem;
+        background-color: #fef3c7;
+        border-radius: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+      }
+      .stats-container-div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        padding-top: 2rem;
+
+        .stats:hover {
+          transition-duration: 400ms;
+          transform: translateY(-5px);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15),
+            0 5px 10px rgba(0, 0, 0, 0.05);
+          border: 2px solid rgba(255, 214, 10, 0.7);
+          background: linear-gradient(135deg, #ffffff, #fef3c7);
+        }
+        .stats {
+          border-radius: 1rem;
+          background-color: white;
+          width: 15rem;
+          height: 8rem;
+          div {
+            font-size: 3rem;
+            color: #dcab25;
+          }
         }
       }
       .rightlist {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-top: 2rem;
+        padding-left: 30%;
+        padding-right: 30%;
       }
     }
   }
@@ -87,14 +133,16 @@
     font-weight: 600;
   }
 }
-@media (max-width: 750px) {
-  .stats-container-div {
-    flex-direction: column;
-  }
-}
-@media (max-width: 1000px) {
+
+@media (max-width: 480px) {
   .listyourPropertyDiv {
-    height: 120vh;
+    height: 83rem;
+    @media (min-width: 340px) and (max-width: 375px) {
+      height: 100rem;
+    }
+    @media (min-width: 376px) and (max-width: 410px) {
+      height: 93rem;
+    }
     margin-top: 0;
     padding-top: 7rem;
     margin-bottom: 50rem;
@@ -115,10 +163,167 @@
         padding: 0;
         padding-top: 2rem;
         flex-wrap: wrap;
+
+        .stats-outer-div {
+          height: 43rem;
+          @media (min-width: 340px) and (max-width: 375px) {
+            height: 38rem;
+          }
+          @media (min-width: 376px) and (max-width: 409px) {
+            height: 35rem;
+          }
+          @media (min-width: 410px) and (max-width: 480px) {
+            height: 34rem;
+          }
+
+          .stats-container-div {
+            align-items: center;
+            padding-top: 0px;
+            margin-bottom: 20px;
+            gap: 1rem;
+            .stats {
+              height: 6rem;
+              div {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 24px;
+        }
+        .fastest {
+          font-size: 1.5rem;
+          margin-bottom: 30px;
+        }
+        .stats-container-div {
+          .stats {
+            div {
+              font-size: 2rem;
+            }
+          }
+        }
+        .rightlist {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
         .leftlist {
           display: flex;
           flex-direction: column;
-          gap: 2.5rem;
+          gap: 1rem;
+          padding-top: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-bottom: 24rem;
+          @media (min-width: 410px) and (max-width: 480px) {
+            margin-bottom: 17rem;
+          }
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+          .rightlist {
+            display: flex;
+            align-items: center;
+          }
+          .listFeatureDiv {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            h2 {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #000000;
+    }
+  }
+
+  .stats-container-div {
+    flex-direction: column;
+  }
+  /* .listyourPropertyDiv {
+    .mainList {
+      .sublist {
+        
+      }
+    }
+  } */
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .listyourPropertyDiv {
+    height: 87rem;
+    margin-top: 0;
+    padding-top: 7rem;
+    margin-bottom: 50rem;
+    img {
+      height: 2rem;
+      border-radius: 100px;
+      padding: 2px;
+      border: 2px solid black;
+    }
+    .mainList {
+      margin-left: 0rem;
+      margin-right: 0rem;
+
+      .sublist {
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding-top: 2rem;
+        flex-wrap: wrap;
+        h1 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .fastest {
+          font-size: 1.5rem;
+          margin-bottom: 30px;
+        }
+        .stats-outer-div {
+          height: 36rem;
+          .stats-container-div {
+            align-items: center;
+            padding-top: 0px;
+            margin-bottom: 20px;
+            gap: 1rem;
+            .stats {
+              height: 6rem;
+              div {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+        .rightlist {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        .leftlist {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 1rem;
+          gap: 0.5rem;
+          margin-bottom: 17rem;
+          padding-top: 0px;
+          @media (min-width: 625px) and (max-width: 767px) {
+            margin-bottom: 10rem;
+          }
+          @media (min-width: 550px) and (max-width: 625px) {
+            margin-bottom: 14rem;
+          }
           h3 {
             font-size: 1.3rem;
             font-weight: 700;
@@ -140,9 +345,157 @@
     }
     h1 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       color: #000000;
-      text-decoration: underline;
+    }
+  }
+
+  .stats-container-div {
+    flex-direction: column;
+  }
+  /* .listyourPropertyDiv {
+    .mainList {
+      .sublist {
+        
+      }
+    }
+  } */
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .listyourPropertyDiv {
+    height: 66rem;
+    margin-top: 0;
+    padding-top: 7rem;
+    margin-bottom: 50rem;
+    img {
+      height: 2rem;
+      border-radius: 100px;
+      padding: 2px;
+      border: 2px solid black;
+    }
+    .mainList {
+      margin-left: 0rem;
+      margin-right: 0rem;
+
+      .sublist {
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding-top: 2rem;
+        flex-wrap: wrap;
+        .rightlist {
+          padding-left: 15%;
+          padding-right: 15%;
+        }
+        .stats-outer-div {
+          height: 17rem;
+          .fastest {
+            font-size: 1.5rem;
+          }
+          .stats-container-div {
+            gap: 1.5rem;
+            .stats {
+              height: 6rem;
+              div {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        .leftlist {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 1rem;
+          margin-bottom: 12rem;
+          @media (min-width: 850px) and (max-width: 1000px) {
+            margin-bottom: 7rem;
+          }
+
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+          .rightlist {
+            display: flex;
+            align-items: center;
+          }
+          .listFeatureDiv {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            h2 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #000000;
+      /* text-decoration: underline; */
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .listyourPropertyDiv {
+    height: 60rem;
+    margin-top: 0;
+    padding-top: 7rem;
+    margin-bottom: 50rem;
+    img {
+      height: 2rem;
+      border-radius: 100px;
+      padding: 2px;
+      border: 2px solid black;
+    }
+    .mainList {
+      margin-left: 0rem;
+      margin-right: 0rem;
+
+      .sublist {
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding-top: 2rem;
+        flex-wrap: wrap;
+        .leftlist {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, auto);
+          gap: 1rem;
+          margin-bottom: 4rem;
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+          .rightlist {
+            display: flex;
+            align-items: center;
+          }
+          .listFeatureDiv {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            h2 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #000000;
     }
   }
 }
