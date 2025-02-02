@@ -202,7 +202,7 @@ const AboutPage = () => {
           </p>
           {/* WhatsApp Community Button */}
           <a
-            // href=""
+            href="https://chat.whatsapp.com/HWJ3YACpCiDGf3na6GLJMq"
             target="_blank"
             className="mt-6 px-4 py-3 bg-green-500 rounded-lg hover:bg-green-600 transition-all cursor-pointer flex w-[270px] justify-self-center items-center relative z-10"
           > 
